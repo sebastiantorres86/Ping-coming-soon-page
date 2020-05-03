@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Ping coming soon page</title>
+
+  <link rel="stylesheet" href="/styles.css" type="text/css">
+
+  <script src="https://kit.fontawesome.com/6fa6438838.js" crossorigin="anonymous"></script>
+
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+
 </head>
+
 <body>
+  <div class="container center-text">
+    <section>
+      <figure>
+        <img class="image-logo" src="/images/logo.svg" alt="">
+      </figure>
+      <h1>We are launching <span class="bold">soon!</span></h1>
+      <p>Subscribe and get notified</p>
 
-  We are launching soon!
+      <form novalidate>
+        <div class="row">
+          <div class="eight columns">
+            <input class="u-full-width" type="email" name="mail" id="mail" required minlength=""
+              placeholder="Your email address...">
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <button class="button-primary u-full-width four columns">Notify Me</button>
+        </div>
 
-  Subscribe and get notified
+      </form>
 
-  Notify Me
+      <figure>
+        <img class="u-full-width image-dashboard" src="/images/illustration-dashboard.png" alt="">
+      </figure>
+    </section>
 
-  &copy; Copyright Ping. All rights reserved.
+    <footer>
+      <nav class="social">
+        <div class="circle"><a href="#facebook"><i class="fab fa-facebook-f"></i></a></div>
+        <div class="circle"><a href="#twitter"><i class="fab fa-twitter"></i></a></div>
+        <div class="circle"><a href="#instagram"><i class="fab fa-instagram"></i></a></div>
+
+
+
+      </nav>
+      <p class="attribution">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </div>
+
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Sebastian Torres</a>.
     </p>
   </footer>
+
+  <script src="/app.js"></script>
 </body>
+
 </html>
